@@ -16,16 +16,22 @@ generateBtn.addEventListener('click',
         nameField.innerHTML = inputFullName;
         numCarrozza.innerHTML = Math.round(Math.random() * 10);
 
-        if (inputAge == 'under18') {
-            costoBiglietto.innerHTML = ((prezzo) - (prezzo * .20)) + '€';
-            promoField.innerHTML = 'Biglietto ridotto minorenni';
-        } else if (inputAge == 'over65') {
-            costoBiglietto.innerHTML = ((prezzo) - (prezzo * .40)) + '€';
-            promoField.innerHTML - 'Biglietto ridotto anziani';
+
+        if (isNaN(inputKm)) {
+            alert('Devi inserire un numero valido.')
         } else {
-            costoBiglietto.innerHTML = prezzo + '€';
-            promoField.innerHTML = 'Biglietto standard';
+            if (inputAge == 'under18') {
+                costoBiglietto.innerHTML = ((prezzo) - (prezzo * .20)) + '€';
+                promoField.innerHTML = 'Biglietto ridotto minorenni';
+            } else if (inputAge == 'over65') {
+                costoBiglietto.innerHTML = ((prezzo) - (prezzo * .40)) + '€';
+                promoField.innerHTML - 'Biglietto ridotto anziani';
+            } else {
+                costoBiglietto.innerHTML = prezzo + '€';
+                promoField.innerHTML = 'Biglietto standard';
+            }
         }
+        
     }
 );
 
