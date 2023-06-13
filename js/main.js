@@ -3,7 +3,8 @@ const generateBtn = document.getElementById('generateBtn');
 const resetBtn = document.getElementById('resetBtn');
 const costoBiglietto = document.getElementById('costoBiglietto');
 const nameField = document.getElementById('nameField');
-const promoField = document.getElementById('promoField')
+const promoField = document.getElementById('promoField');
+const carrozza = document.getElementById('carrozza');
 
 generateBtn.addEventListener('click',
     function() {
@@ -13,6 +14,7 @@ generateBtn.addEventListener('click',
         let prezzo = parseFloat((tariffaKm * inputKm).toFixed(2));
 
         nameField.innerHTML = inputFullName;
+        carrozza.innerHTML = Math.round(Math.random() * 10);
 
         if (inputAge == 'under18') {
             costoBiglietto.innerHTML = ((prezzo) - (prezzo * .20)) + '€';
