@@ -1,2 +1,12 @@
 @import "reset.css";
 @import "general.css";
+
+/* BODY */
+
+* {
+    text-align: center;
+}
+
+.form-container {
+    justify-content: center;
+}
