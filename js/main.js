@@ -16,7 +16,6 @@ generateBtn.addEventListener('click',
         nameField.innerHTML = inputFullName;
         numCarrozza.innerHTML = Math.round(Math.random() * 10);
 
-
         if (isNaN(inputKm)) {
             alert('Devi inserire un numero valido.')
         } else {
@@ -31,7 +30,6 @@ generateBtn.addEventListener('click',
                 promoField.innerHTML = 'Biglietto standard';
             }
         }
-        
     }
 );
 
