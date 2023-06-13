@@ -16,22 +16,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <div>
+    <h2 class="text-light fw-bold my-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="container bg-light rounded-4">
         <form>
-            <div class="row">
+            <div class="row my-2 py-4">
                 <div class="d-flex justify-content-around">
                     <div>
-                        <label for="inputFullName">Nome Cognome</label>
-                        <input type="text" id="inputFullName">
+                        <label for="inputFullName" class="text-danger">Nome Cognome</label>
+                        <input type="text" id="inputFullName" class="form-control">
                     </div>
                     <div>
-                        <label for="inputKm">Km da percorrere</label>
-                        <input type="text" id="inputKm">
+                        <label for="inputKm" class="text-danger">Km da percorrere</label>
+                        <input type="text" id="inputKm" class="form-control">
                     </div>
                     <div>
-                        <label for="">Fascia d'età</label>
-                        <select name="inputAge" id="inputAge">
+                        <label for="inputAge" class="text-danger">Fascia d'età</label>
+                        <select name="inputAge" id="inputAge" class="form-select">
                             <option value="under18">Minorenne</option>
                             <option value="over18">Maggiorenne</option>
                             <option value="over65">Over 65</option>
@@ -39,37 +39,37 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row py-4">
                 <div>
-                    <button type="button" id="generateBtn">Genera</button>
-                    <button type="button" id="resetBtn">Annulla</button>
+                    <button type="button" id="generateBtn" class="btn btn-outline-danger mx-2">Genera</button>
+                    <button type="button" id="resetBtn" class="btn btn-outline-danger mx-2">Annulla</button>
                 </div>
             </div>
         </form>
     </div>
-    <h2>IL TUO BIGLIETTO</h2>
-    <div>
-        <div>
-            <h3>DETTAGLIO PASSEGGERI</h3>
+    <h2 class="text-light fw-bold my-4">IL TUO BIGLIETTO</h2>
+    <div class="container bg-light rounded-4">
+        <div class="row py-4">
+            <h3 class="fw-bold">DETTAGLIO PASSEGGERI</h3>
         </div>
-        <div>
-            <div>
-                <h3>NOME PASSEGGERO</h3>
+        <div class="row py-4">
+            <div class="col bg-secondary bg-gradient text-white rounded mx-2">
+                <h3>Passeggero</h3>
                 <p id="nameField"></p>
             </div>
-            <div>
+            <div class="col mx-2">
                 <h3>Offerta</h3>
                 <p id="promoField">Biglietto standard</p>
             </div>
-            <div>
+            <div class="col mx-2">
                 <h3>Carrozza</h3>
                 <p id="numCarrozza">5</p>
             </div>
-            <div>
+            <div class="col mx-2">
                 <h3>Codice CP</h3>
                 <p>92911</p>
             </div>
-            <div>
+            <div class="col mx-2">
                 <h3>Costo biglietto</h3>
                 <p id="costoBiglietto"></p>
             </div>
