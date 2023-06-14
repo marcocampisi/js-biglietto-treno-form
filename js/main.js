@@ -24,7 +24,7 @@ generateBtn.addEventListener('click',
                 promoField.innerHTML = 'Biglietto ridotto minorenni';
             } else if (inputAge == 'over65') {
                 costoBiglietto.innerHTML = ((prezzo) - (prezzo * .40)) + '€';
-                promoField.innerHTML - 'Biglietto ridotto anziani';
+                promoField.innerHTML = 'Biglietto ridotto anziani';
             } else {
                 costoBiglietto.innerHTML = prezzo + '€';
                 promoField.innerHTML = 'Biglietto standard';
